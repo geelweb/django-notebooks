@@ -1,10 +1,1 @@
-<li class="media">
-{% with ad.adimage_set.all|first as image %}
-  <a class="pull-left thumbnail" href="{% url 'ads_details' pk=ad.id %}">
-    <img src="{{ image.image.url }}" class="ad-preview"/>
-  </a>
-{% endwith %}
-  <div class="media-body">
-      <h4 class="media-heading">{{ ad }}</h4>
-  </div>
-</li>
+<li>{{ item }}</li>

@@ -3,5 +3,6 @@
 <button class="btn btn-default add-to-notebook"
     data-app="{{ app_label }}"
     data-model="{{ model }}"
-    data-id="{{ object_id }}">{% trans "Add to notebook" %}</button>
+    data-id="{{ object_id }}"
+    data-store-url="{% url 'notebook_store' app_label=app_label model=model pk=object_id %}">{% trans "Add to notebook" %}</button>
 

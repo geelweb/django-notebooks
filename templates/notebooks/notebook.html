@@ -1,5 +1,6 @@
 <ul class="notebook-collection"
     data-app="{{ app_label }}"
     data-model="{{ model }}"
-    data-url="{% url "notebook_item" app_label=app_label model=model %}">
+    data-url="{% url "notebook_item" app_label=app_label model=model %}"
+    data-load-url="{% url "notebook_load" app_label=app_label model=model %}">
 </ul>

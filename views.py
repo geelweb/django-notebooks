@@ -1,12 +1,7 @@
-from django.shortcuts import render_to_response
-from django.template import RequestContext
 from django.http import HttpResponse
 from django.contrib.contenttypes.models import ContentType
 from django import template
 
-def notebook(request):
-    return render_to_response('notebooks/notebook.html',
-                              context_instance=RequestContext(request))
 
 def item(request, app_label, model):
     pk = request.GET['pk']

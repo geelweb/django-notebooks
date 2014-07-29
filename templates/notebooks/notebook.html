@@ -1,20 +1,5 @@
-{% extends "layout.html" %}
-{% load staticfiles %}
-
-{% block main_content %}
 <ul class="notebook-collection"
-    data-app="ads"
-    data-model="ad"
-    data-url="{% url "notebook_item" app_label="ads" model="ad" %}">
+    data-app="{{ app_label }}"
+    data-model="{{ model }}"
+    data-url="{% url "notebook_item" app_label=app_label model=model %}">
 </ul>
-
-<style>
-img.ad-preview {
-    width: 200px;
-}
-</style>
-{% endblock %}
-
-{% block bottom_js %}
-<script src="{% static "js/notebook.js" %}"></script>
-{% endblock %}

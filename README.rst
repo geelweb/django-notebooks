@@ -21,6 +21,9 @@ Add ``geelweb.django.notebooks`` to ``INSTALLED_APPS``.
 
 Create the db with ``python manage.py syncdb``
 
+Add the notebooks urls adding in your url patterns
+``url(r'^notebook/', include('geelweb.django.notebooks.urls'))``
+
 Load the notebooks tags in your templates with ``{% load notebooks %}``
 
 

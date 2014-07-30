@@ -2,7 +2,7 @@ from django.http import HttpResponse
 from django.contrib.contenttypes.models import ContentType
 from django import template
 from django.core import serializers
-from notebooks.models import NotebookItem
+from geelweb.django.notebooks.models import NotebookItem
 
 
 def item(request, app_label, model):

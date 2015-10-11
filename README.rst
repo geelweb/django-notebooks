@@ -9,7 +9,7 @@ if the user is not authenticated, or in database if the user is authenticated.
 Install
 =======
 
-Using Pypi::
+Using pip::
 
     pip install https://github.com/geelweb/django-notebooks/archive/master.zip
 

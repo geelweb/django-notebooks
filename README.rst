@@ -11,7 +11,13 @@ Install
 
 Using pip::
 
-    pip install https://github.com/geelweb/django-notebooks/archive/master.zip
+    pip install https://github.com/geelweb/django-notebooks/archive/0.2.zip
+
+
+Requirements
+============
+
+ * jQuery (tested with jQuery 1.11.0)
 
 
 Configuring
@@ -26,6 +32,9 @@ Add the notebooks urls adding in your url patterns
 
 Load the notebooks tags in your templates with ``{% load notebooks %}``
 
+Include the ``notebooks/notebook.js`` script to your pages::
+
+    <script src="{% static "notebooks/notebook.js" %}"></script>
 
 Models
 ======
